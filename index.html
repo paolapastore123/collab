@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- SHOW SLIDES -->
+  <!-- 
+    TABLES FOR LAYOUT https://www.spacejam.com/1996/  
+    WEBDESIGN MUSEUM
+    https://www.webdesignmuseum.org/exhibitions/web-design-in-the-90s
+    Example table based website http://www.dolekemp96.org/main.htm
+  -->
+  <!-- TAKE SCREENSHOT OF TABLES TO SHOW WHAT WE ARE BUILDING -->
+
+  <!-- 
+   cool video about accessible tables
+   https://www.youtube.com/watch?v=npto50RJpDc
+  -->
+  <body>
+    <h2>
+      The HTML table element represents tabular data - information presented in
+      a two-dimensional table comprised of rows and columns of cells containing
+      data.
+    </h2>
+
+    <!-- TABLE 1 -->
+    <table class="rappers">
+      <thead>
+        <!-- thead groups head elements together -->
+        <!-- A tr tag represents a table row -->
+        <tr>
+          <!-- colspan is an attribute to allow the TH to span over multiple columns -->
+          <th colspan="2">Rappers</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- tbody groups body elements together -->
+        <tr>
+          <!-- TD represents a table cell -->
+          <!-- TDs within the same TR will sit next to each other -->
+          <td>Snoop</td>
+          <td>Dogg</td>
+        </tr>
+        <tr>
+          <td>Ice</td>
+          <td>Cube</td>
+        </tr>
+        <tr>
+          <td>Marshall</td>
+          <td>Mathers</td>
+        </tr>
+        <tr>
+          <td>Sany</td>
+          <td>Deluxe</td>
+        </tr>
+        <tr>
+          <td>Eazy</td>
+          <td>E</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <!-- tfoot groups footer elements together -->
+        <tr>
+          <td colspan="2">Made by me</td>
+          <!-- The colspan attribute defines the number of columns a cell should span-->
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- TABLE 2 -->
+
+    <table class="expense">
+      <caption>
+        Corporate Yearly Expenditures
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Items</th>
+          <!-- The <th> tag defines a header cell in an HTML table.-->
+          <!-- scope col indicates a relation in a vertical way -->
+          <th scope="col">Expenditure</th>
+          <!-- 
+              The scope attribute has no visual effect in web browsers, but can be used by screen readers
+              In this case specifies that the cell is a header for a column
+            -->
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <!-- scope row specifies that the cell is a header for a row -->
+          <th scope="row">Staplers</th>
+          <!-- Vertical column head -->
+          <td>3,000</td>
+          <!-- Table data -->
+        </tr>
+        <tr>
+          <th scope="row">Pencils</th>
+          <!-- Vertical column head -->
+          <td>1,000</td>
+          <!-- Table data -->
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th scope="row">Totals</th>
+          <!-- Vertical column head -->
+          <td>4,000</td>
+          <!-- Table data -->
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- TABLE 3 -->
+    <!-- Ask student to work on it -->
+    <table class="country">
+      <caption>
+        Vital info on Countries
+      </caption>
+
+      <thead>
+        <tr>
+          <th scope="col">Countries</th>
+          <th scope="col">Capitals</th>
+          <th scope="col">Population</th>
+          <th scope="col">Language</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">USA</th>
+          <td>Washington, D.C</td>
+          <td>3254940</td>
+          <td>English / Spanish</td>
+        </tr>
+        <tr>
+          <th scope="row">Japan</th>
+          <td>Tokio</td>
+          <td>3254940</td>
+          <td>Japanese</td>
+        </tr>
+        <tr>
+          <th scope="row">Cuba</th>
+          <td>Havana</td>
+          <td>3254940</td>
+          <td>Spanish</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- TABLE 4 -->
+    <!-- TABLE STYLE SEE TABLES SLIDES page 16 -->
+    <table class="heros">
+      <caption>
+        Superheros
+      </caption>
+      <!-- Colgroup used for styling -->
+      <colgroup>
+        <col />
+        <!-- span indicates how many cols should be affected by the class -->
+        <col span="2" class="purple" />
+        <col span="2" class="orange" />
+      </colgroup>
+      <tr>
+        <th></th>
+        <th>Batman</th>
+        <th>Robin</th>
+        <th>Flash</th>
+        <th>Flash 2</th>
+      </tr>
+      <tr>
+        <th>Skills</th>
+        <td>Smart</td>
+        <td>Dex</td>
+        <td>Speed</td>
+        <td>Speed 2</td>
+      </tr>
+    </table>
+
+    <!-- https://uicookies.com/css-table-templates/ -->
+    <!-- COOL TABLE https://colorlib.com/etc/tb/Table_Highlight_Vertical_Horizontal/index.html -->
+  
+  
+  <!-- EXERCISE -->
+  
+    <table class="table">
+			<tbody>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Role</th>
+				</tr>
+				<tr>
+					<td>Scott</td>
+					<td>Gomez</td>
+					<td>Player</td>
+				</tr>
+				<tr>
+					<td>Paul</td>
+					<td>Mackie</td>
+					<td>Coach</td>
+				</tr>
+				<tr>
+					<td>Leoni</td>
+					<td>Cabrera</td>
+					<td>Assistant</td>
+				</tr>
+				<tr>
+					<td>Gregor</td>
+					<td>Byrne</td>
+					<td>Player</td>
+				</tr>
+				<tr>
+					<td>Francis</td>
+					<td>Shaffer</td>
+					<td>Manager</td>
+				</tr>
+				<tr>
+					<td>Walter</td>
+					<td>Gale</td>
+					<td>Player</td>
+				</tr>
+			</tbody>
+		</table>
+  
+  
+  </body>
+</html>
